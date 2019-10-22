@@ -3,6 +3,7 @@ import './css/App.css';
 import {MyHeader} from "./components/MyHeader";
 import {LabelAndInput} from "./components/LabelAndInput"
 import {MyButton} from "./components/MyButton";
+import {MyLabel} from "./components/MyLabel";
 
 const InputList = [
     {className: "add-name", labelText: "Add Name"},
@@ -23,6 +24,7 @@ function App() {
             <MyHeader message={"Random Team Matching"}/>
             {InputList.map((input, i) => <LabelAndInput key={i} {...input}/>)}
             {ButtonList.map((button, i) => <MyButton key={i} {...button}/>)}
+            <MyLabel className={"result"} text={"result"}/>
         </div>
     );
 }
