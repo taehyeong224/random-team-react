@@ -1,0 +1,213 @@
+/* Random Team Matching */
+
+.my-header {
+    position: absolute;
+    width: 382px;
+    height: 41px;
+    left: 240px;
+    top: 47px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+
+    color: #000000;
+}
+
+/* Add Name */
+
+.add-name {
+    position: absolute;
+    width: 279px;
+    left: 89px;
+    top: 146px;
+}
+
+.add-name .background {
+    width: 88px;
+    height: 20px;
+    background: #3498DB;
+    border-radius: 30px;
+    float: left;
+}
+
+.add-name .background .label {
+    /* Add Name */
+    position: center;
+    width: 52px;
+    height: 20px;
+    margin-left: 18px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    /* identical to box height, or 182% */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.add-name input {
+    /* Rectangle */
+    float: left;
+    width: 173px;
+    height: 21px;
+    margin-left: 18px;
+
+    background: #FFFFFF;
+    border: 2px solid #5E5E5E;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+/* Name List */
+.name-list {
+    position: absolute;
+    width: 279px;
+    left: 89px;
+    top: 202px;
+}
+
+.name-list .background {
+    /* Rectangle */
+
+    width: 88px;
+    height: 20px;
+    left: 89px;
+    top: 202px;
+
+    background: #000000;
+    border-radius: 30px;
+    float: left;
+}
+
+
+.name-list .background .label {
+    width: 42px;
+    height: 20px;
+    margin-left: 18px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    /* identical to box height, or 182% */
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.name-list input {
+    /* Rectangle */
+
+    width: 173px;
+    height: 21px;
+    margin-left: 18px;
+
+    background: #FFFFFF;
+    border: 2px solid #5E5E5E;
+    box-sizing: border-box;
+    border-radius: 0px;
+
+    float: left;
+}
+
+/* Team Count */
+.team-count {
+    position: absolute;
+    width: 279px;
+    left: 89px;
+    top: 254px;
+}
+
+.team-count .background {
+    width: 88px;
+    height: 20px;
+    left: 89px;
+    top: 254px;
+
+    background: #000000;
+    border-radius: 30px;
+    float: left;
+}
+
+.team-count .background .label {
+    width: 51px;
+    height: 20px;
+    margin-left: 18px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    /* identical to box height, or 182% */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.team-count input {
+    width: 173px;
+    height: 21px;
+    margin-left: 18px;
+
+    background: #FFFFFF;
+    border: 2px solid #5E5E5E;
+    box-sizing: border-box;
+    border-radius: 0px;
+    float: left;
+}
+
+.size-of-team {
+    position: absolute;
+    width: 279px;
+    left: 89px;
+    top: 316px;
+}
+
+.size-of-team .background {
+    width: 88px;
+    height: 20px;
+    left: 89px;
+    top: 316px;
+
+    background: #000000;
+    border-radius: 30px;
+    float: left;
+}
+
+.size-of-team .background .label {
+    /* Rectangle */
+    width: 56px;
+    height: 20px;
+    margin-left: 16px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    /* identical to box height, or 182% */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.size-of-team input {
+    width: 173px;
+    height: 21px;
+    margin-left: 18px;
+
+    background: #FFFFFF;
+    border: 2px solid #5E5E5E;
+    box-sizing: border-box;
+    border-radius: 0px;
+    float: left;
+}
