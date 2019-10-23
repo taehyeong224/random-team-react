@@ -5,8 +5,7 @@ import {MyHeader} from "./components/MyHeader";
 import {MyButton} from "./components/MyButton";
 import {MyLabel} from "./components/MyLabel";
 import storeFactory from './store'
-import {ClearName, NewName, ShakeName, ShowNameList, TeamSetting} from "./components/containers";
-import {ShuffleList} from "./components/ShuffleList";
+import {ClearName, NewName, ShakeName, ShowNameList, ShowShuffleList, TeamSetting} from "./components/containers";
 
 const store = storeFactory();
 window.store = store;
@@ -29,7 +28,7 @@ function App() {
                 <ShakeName {...ButtonList[1]}/>
                 <MyButton  {...ButtonList[2]}/>
                 <MyLabel className={"result"} text={"result"}/>
-                <ShuffleList/>
+                <ShowShuffleList/>
             </div>
         </Provider>
 

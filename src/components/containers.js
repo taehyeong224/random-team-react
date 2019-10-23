@@ -5,6 +5,7 @@ import {MyButton} from "./MyButton";
 import {ShakeButton} from "./ShakeButton";
 import {TeamComponent} from "./TeamComponent";
 import {NameList} from "./NameList";
+import {ShuffleList} from "./ShuffleList";
 
 export const NewName = connect(
     null,
@@ -26,7 +27,7 @@ export const ClearName = connect(
 
 export const ShakeName = connect(
     state => ({
-        shuffleList: [...state.shuffleList],
+        names: [...state.names.map((name) => name.name)],
         team: {...state.team}
     }),
     dispatch => ({
@@ -37,7 +38,9 @@ export const ShakeName = connect(
 )(ShakeButton)
 
 export const TeamSetting = connect(
-    null,
+    state => ({
+        team: {...state.team}
+    }),
     dispatch => ({
         onChange(team) {
             dispatch(setTeam(team));
@@ -51,3 +54,9 @@ export const ShowNameList = connect(
         names: [...state.names]
     })
 )(NameList)
+
+export const ShowShuffleList = connect(
+    state => ({
+        shuffleList: [...state.shuffleList]
+    })
+)(ShuffleList)

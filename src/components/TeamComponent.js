@@ -1,7 +1,7 @@
 import React from "react"
 import "../css/MyButton.css"
 
-export const TeamComponent = ({onChange = f=>f}) => {
+export const TeamComponent = ({team = {count: 1, size: 10}, onChange = f=>f}) => {
     let count;
     let size;
     const changed = () => {
@@ -17,13 +17,13 @@ export const TeamComponent = ({onChange = f=>f}) => {
             <div className="background">
                 <div className={"label"}>Team Count</div>
             </div>
-            <input type={"text"} ref={input => count = input} onChange={changed}/>
+            <input type={"text"} ref={input => count = input} onChange={changed} defaultValue={team.count}/>
         </div>
         <div className={"size-of-team"}>
             <div className="background">
                 <div className={"label"}>Size Team</div>
             </div>
-            <input type={"text"} ref={input => size = input} onChange={changed}/>
+            <input type={"text"} ref={input => size = input} onChange={changed} defaultValue={team.size}/>
         </div>
     </div>
 }

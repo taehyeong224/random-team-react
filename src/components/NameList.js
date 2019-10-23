@@ -5,6 +5,6 @@ export const NameList = ({className, labelText, names}) => {
         <div className="background">
             <div className={"label"}>{labelText}</div>
         </div>
-        <input type={"text"} value={names.map((name) => name.name).join()}/>
+        <input type={"text"} value={names.map((name) => name.name).join()} readOnly={true}/>
     </div>
 }
