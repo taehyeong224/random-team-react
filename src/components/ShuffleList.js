@@ -1,5 +1,6 @@
 import React from "react"
 import "../css/ShuffleList.css"
+import {array} from "prop-types"
 
 export const ShuffleList = ({shuffleList = []}) => {
     const getRandomStyle = () => {
@@ -24,4 +25,8 @@ export const ShuffleList = ({shuffleList = []}) => {
         )}
         <br/>
     </div>
+}
+
+ShuffleList.propTypes = {
+    shuffleList: array
 }

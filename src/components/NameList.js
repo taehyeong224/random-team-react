@@ -1,4 +1,5 @@
 import React from "react"
+import {string, array} from 'prop-types'
 
 export const NameList = ({className, labelText, names}) => {
     return <div className={className}>
@@ -7,4 +8,11 @@ export const NameList = ({className, labelText, names}) => {
         </div>
         <input type={"text"} value={names.map((name) => name.name).join()} readOnly={true}/>
     </div>
+}
+
+
+NameList.propTypes = {
+    className: string,
+    labelText: string,
+    names: array
 }

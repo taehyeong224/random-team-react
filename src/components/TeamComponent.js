@@ -1,5 +1,6 @@
 import React from "react"
 import "../css/MyButton.css"
+import {object, func} from "prop-types";
 
 export const TeamComponent = ({team = {count: 1, size: 10}, onChange = f=>f}) => {
     let count;
@@ -26,4 +27,9 @@ export const TeamComponent = ({team = {count: 1, size: 10}, onChange = f=>f}) =>
             <input type={"text"} ref={input => size = input} onChange={changed} defaultValue={team.size}/>
         </div>
     </div>
+}
+
+TeamComponent.propTypes = {
+    team: object,
+    onChange: func
 }
