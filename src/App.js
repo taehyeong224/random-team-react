@@ -1,9 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux'
 import './css/App.css';
 import {MyHeader} from "./components/MyHeader";
 import {LabelAndInput} from "./components/LabelAndInput"
 import {MyButton} from "./components/MyButton";
 import {MyLabel} from "./components/MyLabel";
+import storeFactory from './store'
+import {NewName} from "./components/containers";
+
+const store = storeFactory();
+window.store = store;
 
 const InputList = [
     {className: "add-name", labelText: "Add Name"},
@@ -20,12 +26,16 @@ const ButtonList = [
 
 function App() {
     return (
-        <div className="App">
-            <MyHeader message={"Random Team Matching"}/>
-            {InputList.map((input, i) => <LabelAndInput key={i} {...input}/>)}
-            {ButtonList.map((button, i) => <MyButton key={i} {...button}/>)}
-            <MyLabel className={"result"} text={"result"}/>
-        </div>
+        <Provider store={store}>
+            <div className="App">
+                <MyHeader message={"Random Team Matching"}/>
+                <NewName {...InputList[0]} />
+                {InputList.map((input, i) => i === 0 ? "" : <LabelAndInput key={i} {...input}/>)}
+                {ButtonList.map((button, i) => <MyButton key={i} {...button}/>)}
+                <MyLabel className={"result"} text={"result"}/>
+            </div>
+        </Provider>
+
     );
 }
 
