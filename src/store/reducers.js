@@ -1,4 +1,13 @@
-import {ADD_NAME, SET_NAMES, REMOVE_NAME, CLEAR_NAME, GET_NAMES} from "../config/constants"
+import {
+    ADD_NAME,
+    SET_NAMES,
+    REMOVE_NAME,
+    CLEAR_NAME,
+    GET_NAMES,
+    SET_SHUFFLE,
+    CLEAR_SHUFFLE,
+    SET_TEAM
+} from "../config/constants"
 
 export const names = (state = [], action) => {
     switch (action.type) {
@@ -22,7 +31,7 @@ export const names = (state = [], action) => {
     }
 };
 
-export const name = (state = {}, {type, id, name}) => {
+const name = (state = {}, {type, id, name}) => {
     if (type === ADD_NAME) {
         return {
             id: id,
@@ -31,4 +40,25 @@ export const name = (state = {}, {type, id, name}) => {
     } else {
         return state
     }
+};
+
+export const shuffleList = (state = [], {type, shuffleList}) => {
+    switch (type) {
+        case SET_SHUFFLE:
+            return [
+                ...shuffleList
+            ];
+        case CLEAR_SHUFFLE:
+            return [];
+        default:
+            return state;
+    }
+};
+
+export const team = (state = {}, {type, team}) => {
+  if (type === SET_TEAM) {
+      return team;
+  }  else {
+      return state
+  }
 };
