@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="71eb5162-f031-4398-bf6d-4160bf301013" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NameList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NameList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ShakeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShakeButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ShuffleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShuffleList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TeamComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ArrayHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ArrayHelper.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571706071213</updated>
       <workItem from="1571706072480" duration="16638000" />
-      <workItem from="1571794335488" duration="12995000" />
+      <workItem from="1571794335488" duration="13193000" />
     </task>
     <servers />
   </component>

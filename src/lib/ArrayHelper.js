@@ -17,7 +17,6 @@ export const divide = (team) => {
 };
 
 export const insertToGroup = (shuffleList, divided, team) => {
-    console.log("shuffleList : ", shuffleList);
     const result = JSON.parse(JSON.stringify(divided));
     let k = 0;
     for (let i = 0; i < team.count; i++) { // 팀 갯 수 만큼 돌도록
