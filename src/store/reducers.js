@@ -1,13 +1,4 @@
-import {
-    ADD_NAME,
-    SET_NAMES,
-    REMOVE_NAME,
-    CLEAR_NAME,
-    GET_NAMES,
-    SET_SHUFFLE,
-    CLEAR_SHUFFLE,
-    SET_TEAM
-} from "../config/constants"
+import {ADD_NAME, CLEAR_NAME, CLEAR_SHUFFLE, GET_NAMES, REMOVE_NAME, SET_SHUFFLE, SET_TEAM} from "../config/constants"
 
 export const names = (state = [], action) => {
     switch (action.type) {
@@ -16,8 +7,6 @@ export const names = (state = [], action) => {
                 ...state,
                 name({}, action)
             ];
-        case SET_NAMES:
-            return;
         case REMOVE_NAME:
             return state.filter(
                 c => c.id !== action.id

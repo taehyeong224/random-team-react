@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71eb5162-f031-4398-bf6d-4160bf301013" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/random-team-react.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/random-team-react.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LabelAndInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelAndInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyLabel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyLabel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NameList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NameList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShakeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShakeButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShuffleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShuffleList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TeamComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TeamComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/store/reducers/reducers.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +37,8 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -51,10 +50,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -78,7 +78,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Jest.리듀서 테스트">
+    <configuration name="리듀서 테스트" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/__tests__/store/reducers/reducers.test.js" />
+      <test-names>
+        <test-name value="리듀서 테스트" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -99,8 +112,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.리듀서 테스트" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.start" />
       </list>
@@ -117,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571706071213</updated>
       <workItem from="1571706072480" duration="16638000" />
-      <workItem from="1571794335488" duration="19333000" />
+      <workItem from="1571794335488" duration="22847000" />
     </task>
     <servers />
   </component>
