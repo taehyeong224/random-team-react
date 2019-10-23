@@ -1,7 +1,7 @@
 import React from "react"
 import "../css/Label.css"
 
-export const MyLabel = ({className, text}) =>
+export const MyLabel = ({className, text, names = []}) =>
     <div className={className}>
-        <div>{text}</div>
+        <div>{names.length === 0 ? text: `${names.length} people`}</div>
     </div>

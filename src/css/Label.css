@@ -14,3 +14,20 @@
 
     color: #000000;
 }
+
+.people {
+
+    position: absolute;
+    width: 58px;
+    height: 18px;
+    left: 370px;
+    top: 202px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}

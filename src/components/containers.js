@@ -6,6 +6,7 @@ import {ShakeButton} from "./ShakeButton";
 import {TeamComponent} from "./TeamComponent";
 import {NameList} from "./NameList";
 import {ShuffleList} from "./ShuffleList";
+import {MyLabel} from "./MyLabel";
 
 export const NewName = connect(
     null,
@@ -60,3 +61,9 @@ export const ShowShuffleList = connect(
         shuffleList: [...state.shuffleList]
     })
 )(ShuffleList)
+
+export const ShowNameCount = connect(
+    state => ({
+        names: [...state.names]
+    })
+)(MyLabel)
