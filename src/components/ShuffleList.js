@@ -13,10 +13,8 @@ export const ShuffleList = ({shuffleList = []}) => {
             backgroundColor: `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
         }
     };
-    const rand = React.useMemo(() => Math.random(), []) ;
 
     return <div className={"shuffle-list"}>
-        {rand}
         {shuffleList.map((team, i) => {
                 return <div key={i}>
                     <div style={getRandomStyle()} key={i}>team {i + 1}</div>
