@@ -42,6 +42,7 @@
     "@types/react-redux": "^7.1.5",
     "babel-jest": "^24.9.0",
     "chai": "^4.2.0",
+    "deep-freeze": "0.0.1",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
     "jest": "^24.9.0"
